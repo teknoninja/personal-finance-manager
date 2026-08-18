@@ -45,10 +45,7 @@ public class AuthService {
         return userRepository.save(user);
     }
 
-    /**
-     * Authenticates the user and persists the security context into the HTTP session so that the
-     * resulting JSESSIONID cookie authenticates subsequent requests.
-     */
+   
     public void login(LoginRequest request, HttpServletRequest httpRequest, HttpServletResponse httpResponse) {
         Authentication authentication = authenticationManager.authenticate(
                 new UsernamePasswordAuthenticationToken(request.getUsername(), request.getPassword())
