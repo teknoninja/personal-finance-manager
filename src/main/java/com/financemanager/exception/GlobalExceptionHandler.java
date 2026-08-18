@@ -14,11 +14,7 @@ import org.springframework.web.method.annotation.MethodArgumentTypeMismatchExcep
 import java.util.List;
 import java.util.stream.Collectors;
 
-/**
- * Centralized exception handling for the whole application. Ensures every known error scenario
- * maps to a well-formed 4xx response with a descriptive body, and never leaks a raw 5xx stack
- * trace for expected error conditions.
- */
+
 @ControllerAdvice
 public class GlobalExceptionHandler {
 
