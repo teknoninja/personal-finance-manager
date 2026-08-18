@@ -6,11 +6,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-/**
- * A transaction category. Default categories are system-provided (owner == null) and cannot be
- * modified or deleted. Custom categories belong to a single user and must have a name that is
- * unique for that user.
- */
+
 @Entity
 @Table(name = "categories")
 @Data
