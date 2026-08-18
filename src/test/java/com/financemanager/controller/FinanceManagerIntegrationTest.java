@@ -16,10 +16,7 @@ import java.util.Map;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
-/**
- * End-to-end tests that exercise the real HTTP layer, security session handling, and database,
- * mirroring the scenarios covered by the provided financial_manager_tests.sh script.
- */
+
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @AutoConfigureMockMvc
 class FinanceManagerIntegrationTest {
