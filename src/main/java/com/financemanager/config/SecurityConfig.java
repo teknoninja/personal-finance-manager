@@ -19,11 +19,6 @@ import org.springframework.http.HttpStatus;
 
 import java.io.IOException;
 
-/**
- * Session-based security configuration. Registration and login are public; every other endpoint
- * requires an authenticated session (JSESSIONID cookie), established manually in AuthController
- * after successful authentication.
- */
 @Configuration
 @EnableWebSecurity
 @RequiredArgsConstructor
